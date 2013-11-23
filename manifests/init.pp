@@ -94,7 +94,7 @@ define mac_launchd ( $ensure,
         }
       }
       else {
-        notify{ 'Script?':
+        notify{ "${title}-script":
           message => "No script was specified for resource ${title}, but I assume you know that",
         }
       }
