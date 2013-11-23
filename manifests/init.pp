@@ -1,15 +1,15 @@
 # Parameters:
-#	ensure      - Value must be present or absent. Used for placing files.
-#	label		    - Label key inside the launchd plist. Needed for loading and unloading.
+# ensure      - Value must be present or absent. Used for placing files.
+# label       - Label key inside the launchd plist. Needed for loading and unloading.
 # type        - Value must be 'LaunchAgents' or 'LaunchDaemons'. Used for determing where to place launchd job.
-#	launchdf 	  - Value must be the name of the launchd plist. File needs to be stored in this module's files/$fdir directory.
+# launchdf    - Value must be the name of the launchd plist. File needs to be stored in this module's files/$fdir directory.
 # load        - Value must be true or false (no quotes). Used for determining whether or not to load or unload a launchd job.
 # fdir        - Value must be the same as one of the folders in the files directory of this module. Needed for organizational purposes.
-#	script      - Default value is ''. Any other value must be a script located in the $fdir directory. Specify only if your launchd job calls a script
-#	script_path	- Path where you want to store your script on the client side. Make sure your launchd job plist calls the script from this location.
-#	owner	 	    - Default value is 'root'. Any other value must be a valid user. Used for setting the script's owner.
-#	group    	  - Default value is 'wheel'. Any other value must be a valid group. Used for setting the script's group.
-#	mode     	  - Default value is '0644'.
+# script      - Default value is ''. Any other value must be a script located in the $fdir directory. Specify only if your launchd job calls a script
+# script_path - Path where you want to store your script on the client side. Make sure your launchd job plist calls the script from this location.
+# owner       - Default value is 'root'. Any other value must be a valid user. Used for setting the script's owner.
+# group       - Default value is 'wheel'. Any other value must be a valid group. Used for setting the script's group.
+# mode        - Default value is '0644'.
 #
 # Example:
 #  Loading a job with a script:
