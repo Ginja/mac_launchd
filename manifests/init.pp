@@ -9,7 +9,7 @@
 # script_path - Path where you want to store your script on the client side. Make sure your launchd job plist calls the script from this location.
 # owner       - Default value is 'root'. Any other value must be a valid user. Used for setting the script's owner.
 # group       - Default value is 'wheel'. Any other value must be a valid group. Used for setting the script's group.
-# mode        - Default value is '0644'.
+# mode        - Default value is '0555'.
 #
 # Example:
 #  Loading a job with a script:

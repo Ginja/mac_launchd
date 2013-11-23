@@ -26,7 +26,7 @@ Module parameters:
 *	group
   *	Default value is 'wheel'. Any other value must be a valid group. Used for setting the script's group.
 *	mode
-  *	Default value is '0644'.
+  *	Default value is '0555'.
 
 Example launchd plist, which calls an AppleScript:
 
